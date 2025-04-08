@@ -1,9 +1,9 @@
 import numpy as np
 
 # get the generator matrix of LDPC code
-BaseGraph = 1
+BaseGraph = 2
 Z = 5            # lifting factor
-ldpc_i_ls = 2     # index of base graph
+ldpc_i_ls = 0     # index of base graph
 code_BG = np.loadtxt("./BaseGraph/BaseGraph{0}_Set{1}.txt".format(BaseGraph, ldpc_i_ls), int, delimiter='	') # the matrix form of base graph
 code_N = code_BG.shape[1]
 code_m = code_BG.shape[0]
